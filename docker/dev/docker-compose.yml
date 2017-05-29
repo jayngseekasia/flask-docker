@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+
+    jayng_simple_web1:
+        build:
+            context: ../../.
+            dockerfile: ./docker/dev/Dockerfile
+        volumes:
+            - ../../.:/jayng/samele-base
+        ports:
+            - "8100:8999"
+
+
